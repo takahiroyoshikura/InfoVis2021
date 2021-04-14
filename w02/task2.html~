@@ -13,6 +13,7 @@
                        document.write("max = " max);
                        document.write("min = " min);
                        document.write("mid = " mid);
+                       document.write("Hello");
                 </script>
 	</body>
 </html>
