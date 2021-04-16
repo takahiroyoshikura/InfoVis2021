@@ -10,48 +10,48 @@ class Vec3
 
 	max(v)
 	{
-		this.max = v.x
-		if(this.max < v.y)
+		max = v.x
+		if(max < v.y)
 		{
-			this.max = v.y
+			max = v.y
 		}
-		else if(this.max < v.z)
+		if(max < v.z)
 		{
-			this.max = v.z
+			max = v.z
 		}
-		return this
+		return max
 	}
 
         min(v)
 	{
-		this.min = v.x
-		if(this.min > v.y)
+		min = v.x
+		if(min > v.y)
 		{
-			this.min = v.y
+			min = v.y
 		}
-		else if(this.min > v.z)
+		if(min > v.z)
 		{
-			this.min = v.z
+			min = v.z
 		}
-		return this
+		return min
 	}
 
 	mid(v)
 	{
-		this.mid = v.x
-		if(this.mid != max(v) && this.mid != min(v))
+		mid = v.x
+		if(mid != max(v) && mid != min(v))
 		{
-			return this
+			return mid
 		}
-		this.mid = v.y
-		if(this.mid != max(v) && this.mid != min(v))
+		mid = v.y
+		else if(mid != max(v) && mid != min(v))
 		{
-			return this
+			return mid
 		}
 		else
 		{
-			this.mid = v.z
-			return this
+			mid = v.z
+			return mid
 		}
 	}
 

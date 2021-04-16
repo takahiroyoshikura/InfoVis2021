@@ -39,7 +39,7 @@ class Vec3
 	mid(v)
 	{
 		this.mid = v.x
-		if(this.mid != mam(v) && this.mid != min(v))
+		if(this.mid != max(v) && this.mid != min(v))
 		{
 			return this
 		}
