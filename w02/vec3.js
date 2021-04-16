@@ -36,23 +36,23 @@ class Vec3
 		return min
 	}
 
-	mid(v)
-	{
-		mid = v.x
-		if(mid != max(v) && mid != min(v))
-		{
-			return mid
-		}
-		mid = v.y
-		else if(mid != max(v) && mid != min(v))
-		{
-			return mid
-		}
-		else
-		{
-			mid = v.z
-			return mid
-		}
-	}
+	//mid(v)
+	//{
+	//	mid = v.x
+	//	if(mid != max(v) && mid != min(v))
+	//	{
+	//		return mid
+	//	}
+	//	mid = v.y
+	//	else if(mid != max(v) && mid != min(v))
+	//	{
+	//		return mid
+	//	}
+	//	else
+	//	{
+	//		mid = v.z
+	//		return mid
+	//	}
+	//}
 
 }
