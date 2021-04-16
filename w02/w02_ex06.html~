@@ -10,7 +10,8 @@
 		<script src="add.js"></script>
 	<script>
 
-		document.write( Add( 4, 3 ) );
+		document.write("hello"):
+		//document.write( Add( 4, 3 ) );
 
 	</script>
 
