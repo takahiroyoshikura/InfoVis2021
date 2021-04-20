@@ -1,4 +1,4 @@
-class Vec3
+ass Vec3
 {
 	constructor( x, y, z )
 	{
