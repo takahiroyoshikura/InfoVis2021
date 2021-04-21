@@ -3,6 +3,9 @@
 		<title>W04: Task 2</title>
 	</head>
 	<body>
+		<p>Label1</p>
+		<p>Label2</p>
+		<p>Label3</p>
 		<script src="https://d3js.org/d3.v4.min.js"></script>
 		<script>
 			var svg = d3.select("body").append("svg");
@@ -11,7 +14,7 @@ d3.csv("https://takahiroyoshikura.github.io/InfoVis2021/W04/w04_task2.csv",funct
 	.data(data)
 	.enter()
 	.append("rect")
-	.attr("x",10)
+	.attr("x",100)
 		.attr("y",function(d,i){return 10 + i * 30;})
 		.attr("width",function(d){return d.width;})
 	.attr("height",20)
