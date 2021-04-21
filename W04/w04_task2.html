@@ -3,12 +3,12 @@
 		<title>W04: Task 2</title>
 	</head>
 	<body>
-		<p>Label1</p>
-		<p>Label2</p>
-		<p>Label3</p>
 		<script src="https://d3js.org/d3.v4.min.js"></script>
 		<script>
-			var svg = d3.select("body").append("svg");
+			write.document("Label1");
+write.document("Label2");
+write.document("Label3");
+var svg = d3.select("body").append("svg");
 d3.csv("https://takahiroyoshikura.github.io/InfoVis2021/W04/w04_task2.csv",function(data){
 	svg.selectAll("rect")
 	.data(data)
