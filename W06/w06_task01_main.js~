@@ -1,6 +1,6 @@
 d3.csv("https://vizlab-kobe-lecture.github.io/InfoVis2021/W04/data.csv")
 	.then( data => {
-		data.forEach( d => { d.x = +d.x; d.y = +d.y; });
+		data.forEach( d => { d.x = +d.x; d.y = 256 - +d.y; });
 
 		var config = {
 			parent: '#drawing_region',
