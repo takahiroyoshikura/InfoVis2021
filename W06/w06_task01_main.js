@@ -1,12 +1,12 @@
 d3.csv("https://vizlab-kobe-lecture.github.io/InfoVis2021/W04/data.csv")
 	.then( data => {
-		data.forEach( d => { d.x = +d.x; d.y = +d.y; });
+		data.forEach( d => { d.x = +d.x; d.y =256 - +d.y; });
 
 		var config = {
 			parent: '#drawing_region',
 			width: 256,
 			height: 256,
-			margin: {top:40, right:40, bottom:40, left:40}
+			margin: {top:20, right:20, bottom:20, left:20}
 		};
 
 		const scatter_plot = new ScatterPlot( config, data );
@@ -84,7 +84,8 @@ class ScatterPlot {
 		        .append("circle")
 		        .attr("cx", d => self.xscale( d.x ) )
 		        .attr("cy", d => self.yscale( d.y ) )
-		        .attr("r", d => d.r );
+		        .attr("r", d => d.r )
+		        .attr('transform', `translate(${self.config.margin.left}, ${self.config.margin.top})`);
 
 		self.xaxis_group
 			.call( self.xaxis );
